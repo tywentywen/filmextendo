@@ -35,14 +35,14 @@ let posX = 0;
 let posY = 150;
 
 function preload() {
-  movie = createVideo(['data/mb-sewing-bw-web-H264-HALF-RES.mp4']);
+  movie = createVideo(['data/Meiborn-v3-web-H264-QUART-RES.mp4']);
   movie.hide();
 }
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
   background(0);
-	frameRate(24);
+	//frameRate(24);
 	console.log(frameRate())
   print(movie.width + ' • ' + movie.height);
 	print(movie.duration());
@@ -54,7 +54,7 @@ function draw() {
 
 	shearY(- 0.5);
 
-	image(movie, posX, posY, 300, 150);
+	image(movie, posX, posY, 200, 150);
 
 	posX += 1;
 	posY += 1;
